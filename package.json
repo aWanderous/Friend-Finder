@@ -1,0 +1,23 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "find friends app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aWanderous/Friend-Finder.git"
+  },
+  "author": "Alex Wan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aWanderous/Friend-Finder/issues"
+  },
+  "homepage": "https://github.com/aWanderous/Friend-Finder#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
