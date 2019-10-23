@@ -2,11 +2,12 @@ var express = require("express");
 var path = require("path");
 
 var app = express();
-var PORT = 2010;
+var PORT = process.env.PORT || 2010;
 
 app.use(express.urlencoded({
     extended: true
 }));
+
 app.use(express.json());
 
 app.listen(PORT, function () {
