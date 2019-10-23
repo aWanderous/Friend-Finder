@@ -24,46 +24,222 @@
     </div>
   </header>
 
-  <form>
+  <form id="survey">
 
     <div class="container">
       <div class="col-md-12">
         <div class="form-group">
           <label for="formGroupExampleInput">Name</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Joe">
+          <input type="text" class="form-control" id="formGroupExampleInput"
+            placeholder="What your friends call you (Required)">
         </div>
         <div class="form-group">
-          <label for="formGroupExampleInput2">Image of you</label>
-          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+          <label for="formGroupExampleInput2">Photograph</label>
+          <input type="text" class="form-control" id="formGroupExampleInput2"
+            placeholder="Please insert a link with an image of you (Required)">
         </div>
 
         <div class="form-group">
           <label for="exampleFormControlInput1">Email address</label>
           <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
         </div>
+        Gender
+        </br>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="gender" id="male" value="Male">
+          <label class="form-check-label" for="male">Male
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="gender" id="female" value="Female">
+          <label class="form-check-label" for="female">Female
+          </label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="gender" id="naGender" value="option2">
+          <label class="form-check-label" for="naGender">Rather Not Say
+          </label>
+        </div>
+        </br>
+        </br>
 
+        <div class="questions"><span class="questionNo">Question 1: </span>Do you like pets?</div>
+        Strongly Disagree
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-          <label class="form-check-label" for="exampleRadios1">
-            Default radio
-          </label>
+          <input class="form-check-input" type="radio" name="pets" id="pets1" value="1">
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-          <label class="form-check-label" for="exampleRadios2">
-            Second default radio
-          </label>
+          <input class="form-check-input" type="radio" name="pets" id="pets2" value="2">
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-          <label class="form-check-label" for="exampleRadios3">
-            Disabled radio
-          </label>
+          <input class="form-check-input" type="radio" name="pets" id="pets3" value="3">
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="pets" id="pets4" value="4">
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="pets" id="pets5" value="5">
+          Strongly Agree
+        </div>
+        </br>
+        </br>
+
+        <div class="questions"><span class="questionNo">Question 2: </span>Do you like going out (eg. beach, trail
+          walking, etc.)?</div>
+        Strongly Disagree
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="outdoors" id="outdoors1" value="1">
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="outdoors" id="outdoors2" value="2">
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="outdoors" id="outdoors3" value="3">
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="outdoors" id="outdoors4" value="4">
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="outdoors" id="outdoors5" value="5">
+          Strongly Agree
+        </div>
+        </br>
+        </br>
+
+        <div class="questions"><span class="questionNo">Question 3: </span>Are you good at keeping secrets?</div>
+        Strongly Disagree
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="secret" id="secret1" value="1">
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="secret" id="secret2" value="2">
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="secret" id="secret3" value="3">
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="secret" id="secret4" value="4">
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="secret" id="secret5" value="5">
+          Strongly Agree
+        </div>
+        </br>
+        </br>
+
+        <div class="questions"><span class="questionNo">Question 4: </span>Do you like trying new foods?</div>
+        Strongly Disagree
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="foods" id="foods1" value="1">
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="foods" id="foods2" value="2">
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="foods" id="foods3" value="3">
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="foods" id="foods4" value="4">
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="foods" id="foods5" value="5">
+          Strongly Agree
+        </div>
+        </br>
+        </br>
+
+        <div class="questions"><span class="questionNo">Question 5: </span>Do you consider yourself a shy person?</div>
+        Strongly Disagree
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="shy" id="shy1" value="1">
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="shy" id="shy2" value="2">
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="shy" id="shy3" value="3">
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="shy" id="shy4" value="4">
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="shy" id="shy5" value="5">
+          Strongly Agree
+        </div>
+        </br>
+        </br>
+
+        <div class="questions"><span class="questionNo">Question 6: </span>Do you get angry easily?</div>
+        Strongly Disagree
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="anger" id="anger1" value="1">
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="anger" id="anger2" value="2">
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="anger" id="anger3" value="3">
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="anger" id="anger4" value="4">
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="anger" id="anger5" value="5">
+          Strongly Agree
+        </div>
+        </br>
+        </br>
+
+        <div class="questions"><span class="questionNo">Question 7: </span>Do you like most of your things planned out?</div>
+        Strongly Disagree
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="plan" id="plan1" value="1">
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="plan" id="plan2" value="2">
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="plan" id="plan3" value="3">
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="plan" id="plan4" value="4">
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="plan" id="plan5" value="5">
+          Strongly Agree
+        </div>
+        </br>
+        </br>
+
+        <div class="questions"><span class="questionNo">Question 8: </span>Do you like trying new foods?</div>
+        Strongly Disagree
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="foods1" id="foods1" value="1">
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="foods2" id="foods2" value="2">
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="foods3" id="foods3" value="3">
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="foods4" id="foods4" value="4">
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="foods5" id="foods5" value="5">
+          Strongly Agree
+        </div>
+
+        </br>
+        <div class="row">
+          <button type="submit" class="btn btn-warning btn-lg btn-block">submit</button>
         </div>
       </div>
-
     </div>
   </form>
+
+
+
 
 
 
@@ -76,6 +252,18 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+
+  <script>
+    $("#booking").submit(function (event) {
+      event.preventDefault();
+      $.ajax("/api/friends", {
+        method: "POST",
+        data: $("#survey").serialize()
+      }).then(function (response) {
+        console.log(response);
+      })
+    })
+  </script>
 </body>
 
 </html>
