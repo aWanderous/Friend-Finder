@@ -6,13 +6,18 @@ module.exports = function (app) {
         res.json(friends);
     });
 
-    app.post("/api/friends", function (req, res) {
-        console.log(req.body.scores);
+    app.post("/api/friends", function (data) {
 
-        var user = req.body;
+        var user = data.body;
         var minimumDifference = 40;
         var bestFriend = 0;
 
+        var scores = [];
+
+        scores.push(user.pets, user.outdoors, user.secret, user.foods, user.shy, user.anger, user.plan, user.rules, user.listener, user.religion);
+        console.log(user)
+        console.log(scores)
+        user.push({scores})
         for (var i = 0; i < user.scores.length; i++) {
             user.scores[i] = parseInt(user.scores[i]);
         };
