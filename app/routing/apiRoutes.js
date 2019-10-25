@@ -10,6 +10,8 @@ module.exports = function (app) {
         console.log(req.body.scores);
 
         var user = req.body;
+        var minimumDifference = 40;
+        var bestFriend = 0;
 
         for (var i = 0; i < user.scores.length; i++) {
             user.scores[i] = parseInt(user.scores[i]);
@@ -24,10 +26,9 @@ module.exports = function (app) {
                 totalDifference += difference;
             };
 
-            var minimumDifference = 40;
 
             if (totalDifference < minimumDifference) {
-                bestFriendIndex = i;
+                bestFriend = i;
                 minimumDifference = totalDifference;
             };
         };
