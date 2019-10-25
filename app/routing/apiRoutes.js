@@ -6,7 +6,7 @@ module.exports = function (app) {
         res.json(friends);
     });
 
-    app.post("/api/friends", function (data) {
+    app.post("/api/friends", function (data, res) {
 
         var user = data.body;
         var minimumDifference = 40;
@@ -15,9 +15,11 @@ module.exports = function (app) {
         var scores = [];
 
         scores.push(user.pets, user.outdoors, user.secret, user.foods, user.shy, user.anger, user.plan, user.rules, user.listener, user.religion);
-        console.log(user)
         console.log(scores)
-        user.push({scores})
+        
+        user.scores = scores;
+        
+        console.log(user)
         for (var i = 0; i < user.scores.length; i++) {
             user.scores[i] = parseInt(user.scores[i]);
         };
