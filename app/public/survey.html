@@ -30,8 +30,7 @@
       <div class="col-md-12">
         <div class="form-group">
           <label class="questionNo">Name</label>
-          <input type="text" class="form-control" id="name"
-            placeholder="What your friends call you (Required)">
+          <input type="text" class="form-control" id="name" placeholder="What your friends call you (Required)">
         </div>
         <div class="form-group">
           <label class="questionNo">Photograph</label>
@@ -230,7 +229,8 @@
         </br>
         </br>
 
-        <div class="questions"><span class="questionNo">Question 9: </span>Do you consider yourself a good listener?</div>
+        <div class="questions"><span class="questionNo">Question 9: </span>Do you consider yourself a good listener?
+        </div>
         Strongly Disagree
         <div class="form-check form-check-inline">
           <input class="form-check-input" type="radio" name="listener" id="listener1" value="1">
@@ -283,23 +283,26 @@
 
   <!-- The Modal -->
   <div id="bestFriendModal" class="modal">
-  
+
     <div class="modal-content">
       <span class="close">&times;</span>
-      <h2 class = "modal-title">Your New Best Friend</h2>
+      <h2 class="modal-title">Your New Best Friend</h2>
     </div>
     <div class="modal-body">
       <h2 id="bestFriend"></h2>
       <img id="bestFriendPhoto" src="#">
+      <h3>Gender:</h3>
+      <p id="bestFriendGender"></p>
+      <h3>Email:</h3>
+      <p id="bestFriendEmail"></p>
     </div>
-  
+
   </div>
 
 
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
@@ -308,7 +311,7 @@
     crossorigin="anonymous"></script>
 
   <script>
-    $("#booking").submit(function (event) {
+    $("#survey").submit(function (event) {
       event.preventDefault();
       $.ajax("/api/friends", {
         method: "POST",
@@ -318,6 +321,7 @@
       })
     })
   </script>
+
 </body>
 
 </html>
