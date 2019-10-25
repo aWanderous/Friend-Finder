@@ -30,18 +30,18 @@
       <div class="col-md-12">
         <div class="form-group">
           <label for="formGroupExampleInput">Name</label>
-          <input type="text" class="form-control" id="formGroupExampleInput"
+          <input type="text" class="form-control" id="name"
             placeholder="What your friends call you (Required)">
         </div>
         <div class="form-group">
           <label for="formGroupExampleInput2">Photograph</label>
-          <input type="text" class="form-control" id="formGroupExampleInput2"
+          <input type="text" class="form-control" id="photo"
             placeholder="Please insert a link with an image of you (Required)">
         </div>
 
         <div class="form-group">
           <label for="exampleFormControlInput1">Email address</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          <input type="email" class="form-control" id="email" placeholder="name@example.com">
         </div>
         Gender
         </br>
@@ -212,66 +212,64 @@
         </br>
         </br>
 
-        <div class="questions"><span class="questionNo">Question 8: </span>?</div>
+        <div class="questions"><span class="questionNo">Question 8: </span>Do you like to stick to the rules?</div>
         Strongly Disagree
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="food" id="food1" value="1">
+          <input class="form-check-input" type="radio" name="rules" id="rules1" value="1">
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="food" id="food2" value="2">
+          <input class="form-check-input" type="radio" name="rules" id="rules2" value="2">
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="food" id="food3" value="3">
+          <input class="form-check-input" type="radio" name="rules" id="rules3" value="3">
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="food" id="food4" value="4">
+          <input class="form-check-input" type="radio" name="rules" id="rules4" value="4">
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="food" id="food5" value="5">
+          <input class="form-check-input" type="radio" name="rules" id="rules5" value="5">
           Strongly Agree
         </div>
         </br>
         </br>
 
-        <div class="questions"><span class="questionNo">Question 9: </span>?
-        </div>
+        <div class="questions"><span class="questionNo">Question 9: </span>Do you consider yourself a good listener?</div>
         Strongly Disagree
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="planzz" id="planzz1" value="1">
+          <input class="form-check-input" type="radio" name="listener" id="listener1" value="1">
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="planzz" id="planzz2" value="2">
+          <input class="form-check-input" type="radio" name="listener" id="listener2" value="2">
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="planzz" id="planzz3" value="3">
+          <input class="form-check-input" type="radio" name="listener" id="listener3" value="3">
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="planzz" id="planzz4" value="4">
+          <input class="form-check-input" type="radio" name="listener" id="listener4" value="4">
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="planzz" id="planzz5" value="5">
+          <input class="form-check-input" type="radio" name="listener" id="listener5" value="5">
           Strongly Agree
         </div>
         </br>
         </br>
 
-        <div class="questions"><span class="questionNo">Question 10: </span>?
-        </div>
+        <div class="questions"><span class="questionNo">Question 10: </span>Do you believe in religion?</div>
         Strongly Disagree
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="alan" id="alan1" value="1">
+          <input class="form-check-input" type="radio" name="religion" id="religion1" value="1">
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="alan" id="alan2" value="2">
+          <input class="form-check-input" type="radio" name="religion" id="religion2" value="2">
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="alan" id="alan3" value="3">
+          <input class="form-check-input" type="radio" name="religion" id="religion3" value="3">
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="alan" id="alan4" value="4">
+          <input class="form-check-input" type="radio" name="religion" id="religion4" value="4">
         </div>
         <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="alan" id="alan5" value="5">
+          <input class="form-check-input" type="radio" name="religion" id="religion5" value="5">
           Strongly Agree
         </div>
         </br>
@@ -286,7 +284,19 @@
   </form>
 
 
-
+  <!-- The Modal -->
+  <div id="bestFriendModal" class="modal">
+  
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 class = "modal-title">Your New Best Friend</h2>
+    </div>
+    <div class="modal-body">
+      <h2 id="bestFriend"></h2>
+      <img id="bestFriendPhoto" src="#">
+    </div>
+  
+  </div>
 
 
 
