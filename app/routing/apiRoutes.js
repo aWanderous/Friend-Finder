@@ -15,11 +15,9 @@ module.exports = function (app) {
         var scores = [];
 
         scores.push(user.pets, user.outdoors, user.secret, user.foods, user.shy, user.anger, user.plan, user.rules, user.listener, user.religion);
-        console.log(scores)
         
         user.scores = scores;
         
-        console.log(user)
         for (var i = 0; i < user.scores.length; i++) {
             user.scores[i] = parseInt(user.scores[i]);
         };

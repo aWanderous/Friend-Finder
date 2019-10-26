@@ -280,21 +280,22 @@
     </div>
   </form>
 
-
-  <!-- The Modal -->
   <div id="bestFriendModal" class="modal">
 
     <div class="modal-content">
       <span class="close">&times;</span>
       <h2 class="modal-title">Your New Best Friend</h2>
-    </div>
-    <div class="modal-body">
-      <h2 id="bestFriend"></h2>
-      <img id="bestFriendPhoto" src="#">
-      <h3>Gender:</h3>
-      <p id="bestFriendGender"></p>
-      <h3>Email:</h3>
-      <p id="bestFriendEmail"></p>
+      <div class="modal-body">
+        <h2 id="bestFriend"></h2>
+        <img id="bestFriendPhoto" src="#">
+        <h3>Gender:</h3>
+        <p id="bestFriendGender"></p>
+        <h3>Email:</h3>
+        <p id="bestFriendEmail"></p>
+      </div>
+      <div class="modal-footer">
+          <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+        </div>
     </div>
 
   </div>
@@ -315,7 +316,11 @@
         method: "POST",
         data: $("#survey").serialize()
       }).then(function (response) {
-        console.log(response);
+        $("#bestFriend").text(response.name);
+        $("#bestFriendPhoto").attr("src",response.photo);
+        $("#bestFriendGender").text(response.gender);
+        $("#bestFriendEmail").text(response.email);
+        $("#bestFriendModal").modal("toggle");
       })
     })
   </script>
